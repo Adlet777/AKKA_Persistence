@@ -1,0 +1,156 @@
+[debug] > Exec(;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/Adlet/AppData/Local/Temp/sbt-structure.xml; session clear-all ; set ideaPort in Global := 57637, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 15.0.2)
+[debug]       Load.loadUnit: plugins took 70.5309ms
+[debug]       Load.loadUnit: defsScala took 0.0086ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.0457 ms
+[debug]           Load.resolveProject(global-plugins) took 6.4889ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Adlet\.sbt\1.0\plugins, plugins: List(<none>))) took 11.4189ms
+[debug] [Loading] Done in C:\Users\Adlet\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 14.7758ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.0084ms
+[debug]     Load.loadUnit(file:/C:/Users/Adlet/.sbt/1.0/plugins/, ...) took 87.6882ms
+[debug]   Load.apply: load took 94.479ms
+[debug]   Load.apply: resolveProjects took 0.5358ms
+[debug]   Load.apply: finalTransforms took 18.465ms
+[debug]   Load.apply: config.delegates took 0.9232ms
+[debug]   Load.apply: Def.make(settings)... took 76.149ms
+[debug]   Load.apply: structureIndex took 26.6953ms
+[debug]   Load.apply: mkStreams took 0.1043ms
+[info] loading global plugins from C:\Users\Adlet\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Forcing garbage collection...
+[debug] Load.defaultLoad until apply took 1193.5144ms
+[debug]           Load.loadUnit: plugins took 50.4287ms
+[debug]           Load.loadUnit: defsScala took 0.0073ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project
+[debug]             Load.loadUnit: mkEval took 0.5788ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.1582 ms
+[info] loading settings for project akka_persistence-build from idea2.sbt ...
+[debug]               Load.resolveProject(akka_persistence-build) took 6.6422ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id akka_persistence-build, base: C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, plugins: List(<none>))) took 9.812ms
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, returning: (akka_persistence-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 39.6677ms
+[debug]           Load.loadUnit: cleanEvalClasses took 6.6176ms
+[debug]         Load.loadUnit(file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/project/, ...) took 98.0267ms
+[debug]       Load.apply: load took 100.0731ms
+[debug]       Load.apply: resolveProjects took 0.1564ms
+[debug]       Load.apply: finalTransforms took 11.8034ms
+[debug]       Load.apply: config.delegates took 0.4489ms
+[debug]       Load.apply: Def.make(settings)... took 57.4545ms
+[debug]       Load.apply: structureIndex took 22.7252ms
+[debug]       Load.apply: mkStreams took 0.0047ms
+[info] loading project definition from C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 410.6678ms
+[debug]     Load.loadUnit: defsScala took 0.005ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence
+[debug]       Load.loadUnit: mkEval took 0.3832ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.7114 ms
+[info] loading settings for project akka_persistence from build.sbt ...
+[debug]         Load.resolveProject(akka_persistence) took 30.131ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id akka_persistence, base: C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence, plugins: List(<none>))) took 32.3521ms
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence, returning: (akka_persistence)
+[debug]     Load.loadUnit: loadedProjectsRaw took 939.0017ms
+[debug]     Load.loadUnit: cleanEvalClasses took 32.9949ms
+[debug]   Load.loadUnit(file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/, ...) took 1383.7585ms
+[debug] Load.apply: load took 1385.7053ms
+[debug] Load.apply: resolveProjects took 0.0931ms
+[debug] Load.apply: finalTransforms took 20.0141ms
+[debug] Load.apply: config.delegates took 0.2584ms
+[debug] Load.apply: Def.make(settings)... took 60.6118ms
+[debug] Load.apply: structureIndex took 15.4662ms
+[debug] Load.apply: mkStreams took 0.0028ms
+[warn] Discarding 1 session setting.  Use 'session save' to persist session settings.
+[info] set current project to akka_persistence (in build file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveSbtClassifiers", None, None)
+[info] Defining Global / sbtStructureOptions
+[info] The new value will be used by Global / ssOptions
+[debug] Defining 
+[debug] 	Global / sbtStructureOptions
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Global / ssOptions
+[info] Reapplying settings...
+[info] set current project to akka_persistence (in build file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/)
+[debug] > Exec(*/*:dumpStructureTo C:/Users/Adlet/AppData/Local/Temp/sbt-structure.xml, None, None)
+[debug] Evaluating tasks: Global / dumpStructureTo
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[error] lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+[error] https://repo1.maven.org/maven2/com/github/jnr/jffi/1.2.18/jffi-1.2.18-native.jar: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\jffi-1.2.18-native.jar (expected SHA-1 fb54851e631ff91651762587bc3c61a407d328df in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\.jffi-1.2.18-native.jar__sha1, got aa51b75aef193f059435c4f64e177d2ca32bd89)
+[error] 
+[error] 	at lmcoursier.internal.shaded.coursier.Artifacts$.$anonfun$fetchArtifacts$9(Artifacts.scala:346)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$extension$1(Task.scala:14)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$extension$1$adapted(Task.scala:14)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.wrap(Task.scala:84)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$2(Task.scala:14)
+[error] 	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:832)
+[error] Caused by: lmcoursier.internal.shaded.coursier.cache.ArtifactError$WrongChecksum: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\jffi-1.2.18-native.jar (expected SHA-1 fb54851e631ff91651762587bc3c61a407d328df in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\.jffi-1.2.18-native.jar__sha1, got aa51b75aef193f059435c4f64e177d2ca32bd89)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$validateChecksum$4(FileCache.scala:694)
+[error] 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+[error] 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+[error] 	at scala.util.Success.map(Try.scala:213)
+[error] 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+[error] 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:832)
+[error] lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+[error] https://repo1.maven.org/maven2/com/github/jnr/jffi/1.2.18/jffi-1.2.18-native.jar: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\jffi-1.2.18-native.jar (expected SHA-1 fb54851e631ff91651762587bc3c61a407d328df in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\.jffi-1.2.18-native.jar__sha1, got aa51b75aef193f059435c4f64e177d2ca32bd89)
+[error] 
+[error] 	at lmcoursier.internal.shaded.coursier.Artifacts$.$anonfun$fetchArtifacts$9(Artifacts.scala:346)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$extension$1(Task.scala:14)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$extension$1$adapted(Task.scala:14)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.wrap(Task.scala:84)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$2(Task.scala:14)
+[error] 	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:832)
+[error] Caused by: lmcoursier.internal.shaded.coursier.cache.ArtifactError$WrongChecksum: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\jffi-1.2.18-native.jar (expected SHA-1 fb54851e631ff91651762587bc3c61a407d328df in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\.jffi-1.2.18-native.jar__sha1, got aa51b75aef193f059435c4f64e177d2ca32bd89)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$validateChecksum$4(FileCache.scala:694)
+[error] 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+[error] 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+[error] 	at scala.util.Success.map(Try.scala:213)
+[error] 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+[error] 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:832)
+[error] (update) lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+[error] https://repo1.maven.org/maven2/com/github/jnr/jffi/1.2.18/jffi-1.2.18-native.jar: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\jffi-1.2.18-native.jar (expected SHA-1 fb54851e631ff91651762587bc3c61a407d328df in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\.jffi-1.2.18-native.jar__sha1, got aa51b75aef193f059435c4f64e177d2ca32bd89)
+[error] (ssExtractDependencies) lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+[error] https://repo1.maven.org/maven2/com/github/jnr/jffi/1.2.18/jffi-1.2.18-native.jar: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\jffi-1.2.18-native.jar (expected SHA-1 fb54851e631ff91651762587bc3c61a407d328df in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\jnr\jffi\1.2.18\.jffi-1.2.18-native.jar__sha1, got aa51b75aef193f059435c4f64e177d2ca32bd89)
+[error] Total time: 18 s, completed 17 Feb 2021, 09:54:49
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)

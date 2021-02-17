@@ -1,0 +1,66 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\Adlet\AppData\Local\Temp\idea1.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\Adlet\AppData\Local\Temp\idea1.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 15.0.2)
+[debug]       Load.loadUnit: plugins took 103.2105ms
+[debug]       Load.loadUnit: defsScala took 0.4533ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 30.129 ms
+[debug]           Load.resolveProject(global-plugins) took 52.6566ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Adlet\.sbt\1.0\plugins, plugins: List(<none>))) took 121.8459ms
+[debug] [Loading] Done in C:\Users\Adlet\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 155.9829ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.28ms
+[debug]     Load.loadUnit(file:/C:/Users/Adlet/.sbt/1.0/plugins/, ...) took 274.8543ms
+[debug]   Load.apply: load took 479.776ms
+[debug]   Load.apply: resolveProjects took 6.0067ms
+[debug]   Load.apply: finalTransforms took 87.6409ms
+[debug]   Load.apply: config.delegates took 11.3608ms
+[debug]   Load.apply: Def.make(settings)... took 928.0026ms
+[debug]   Load.apply: structureIndex took 117.2185ms
+[debug]   Load.apply: mkStreams took 1.5632ms
+[info] loading global plugins from C:\Users\Adlet\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[error] lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+[error] https://repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.4.7/command_2.12-1.4.7.jar: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\command_2.12\1.4.7\command_2.12-1.4.7.jar (expected SHA-1 de0ae8e1899ca01d6a79a44bf58760fef65b98d8 in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\command_2.12\1.4.7\.command_2.12-1.4.7.jar__sha1, got be17dc9c49ecfa82a5d7295e3d56cbedbdc93a77)
+[error] 
+[error] 	at lmcoursier.internal.shaded.coursier.Artifacts$.$anonfun$fetchArtifacts$9(Artifacts.scala:346)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$extension$1(Task.scala:14)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$extension$1$adapted(Task.scala:14)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.wrap(Task.scala:84)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$2(Task.scala:14)
+[error] 	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:832)
+[error] Caused by: lmcoursier.internal.shaded.coursier.cache.ArtifactError$WrongChecksum: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\command_2.12\1.4.7\command_2.12-1.4.7.jar (expected SHA-1 de0ae8e1899ca01d6a79a44bf58760fef65b98d8 in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\command_2.12\1.4.7\.command_2.12-1.4.7.jar__sha1, got be17dc9c49ecfa82a5d7295e3d56cbedbdc93a77)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$validateChecksum$4(FileCache.scala:694)
+[error] 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+[error] 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+[error] 	at scala.util.Success.map(Try.scala:213)
+[error] 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+[error] 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:832)
+[error] (update) lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+[error] https://repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.4.7/command_2.12-1.4.7.jar: wrong checksum: C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\command_2.12\1.4.7\command_2.12-1.4.7.jar (expected SHA-1 de0ae8e1899ca01d6a79a44bf58760fef65b98d8 in C:\Users\Adlet\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\command_2.12\1.4.7\.command_2.12-1.4.7.jar__sha1, got be17dc9c49ecfa82a5d7295e3d56cbedbdc93a77)
+[debug] > Exec(loadFailed, None, None)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)

@@ -1,0 +1,115 @@
+[debug] > Exec(;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/Adlet/AppData/Local/Temp/sbt-structure.xml; session clear-all ; set ideaPort in Global := 57637, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 15.0.2)
+[debug]       Load.loadUnit: plugins took 20.9844ms
+[debug]       Load.loadUnit: defsScala took 0.0111ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.0 ms
+[debug]           Load.resolveProject(global-plugins) took 1.1239ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Adlet\.sbt\1.0\plugins, plugins: List(<none>))) took 2.5359ms
+[debug] [Loading] Done in C:\Users\Adlet\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 3.359ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.0082ms
+[debug]     Load.loadUnit(file:/C:/Users/Adlet/.sbt/1.0/plugins/, ...) took 65.3434ms
+[debug]   Load.apply: load took 66.7841ms
+[debug]   Load.apply: resolveProjects took 0.1079ms
+[debug]   Load.apply: finalTransforms took 4.3666ms
+[debug]   Load.apply: config.delegates took 0.2637ms
+[debug]   Load.apply: Def.make(settings)... took 37.7259ms
+[debug]   Load.apply: structureIndex took 11.0663ms
+[debug]   Load.apply: mkStreams took 0.0042ms
+[info] loading global plugins from C:\Users\Adlet\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 346.4478ms
+[debug]           Load.loadUnit: plugins took 30.7723ms
+[debug]           Load.loadUnit: defsScala took 0.003ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project
+[debug]             Load.loadUnit: mkEval took 0.2382ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.5183 ms
+[info] loading settings for project akka_persistence-build from idea2.sbt ...
+[debug]               Load.resolveProject(akka_persistence-build) took 1.3346ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id akka_persistence-build, base: C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, plugins: List(<none>))) took 3.2651ms
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, returning: (akka_persistence-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 18.2509ms
+[debug]           Load.loadUnit: cleanEvalClasses took 4.9624ms
+[debug]         Load.loadUnit(file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/project/, ...) took 54.8791ms
+[debug]       Load.apply: load took 56.2003ms
+[debug]       Load.apply: resolveProjects took 0.0883ms
+[debug]       Load.apply: finalTransforms took 3.9962ms
+[debug]       Load.apply: config.delegates took 0.3211ms
+[debug]       Load.apply: Def.make(settings)... took 34.7583ms
+[debug]       Load.apply: structureIndex took 12.1422ms
+[debug]       Load.apply: mkStreams took 0.0034ms
+[info] loading project definition from C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 254.6814ms
+[debug]     Load.loadUnit: defsScala took 0.0085ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence
+[debug]       Load.loadUnit: mkEval took 0.3378ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.5973 ms
+[info] loading settings for project akka_persistence from build.sbt ...
+[debug]         Load.resolveProject(akka_persistence) took 24.1676ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id akka_persistence, base: C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence, plugins: List(<none>))) took 26.2285ms
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence, returning: (akka_persistence)
+[debug]     Load.loadUnit: loadedProjectsRaw took 107.2873ms
+[debug]     Load.loadUnit: cleanEvalClasses took 17.0738ms
+[debug]   Load.loadUnit(file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/, ...) took 380.0818ms
+[debug] Load.apply: load took 381.5561ms
+[debug] Load.apply: resolveProjects took 0.082ms
+[debug] Load.apply: finalTransforms took 11.1479ms
+[debug] Load.apply: config.delegates took 0.1958ms
+[debug] Load.apply: Def.make(settings)... took 41.2094ms
+[debug] Load.apply: structureIndex took 46.8886ms
+[debug] Load.apply: mkStreams took 0.0026ms
+[warn] Discarding 1 session setting.  Use 'session save' to persist session settings.
+[info] set current project to akka_persistence (in build file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveSbtClassifiers", None, None)
+[info] Defining Global / sbtStructureOptions
+[info] The new value will be used by Global / ssOptions
+[debug] Defining 
+[debug] 	Global / sbtStructureOptions
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Global / ssOptions
+[info] Reapplying settings...
+[info] set current project to akka_persistence (in build file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/)
+[debug] > Exec(*/*:dumpStructureTo C:/Users/Adlet/AppData/Local/Temp/sbt-structure.xml, None, None)
+[debug] Evaluating tasks: Global / dumpStructureTo
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] Writing structure to C:\Users\Adlet\AppData\Local\Temp\sbt-structure.xml...
+[info] Done.
+[success] Total time: 2 s, completed 17 Feb 2021, 09:56:43
+[debug] > Exec(session clear-all, None, None)
+[info] Reapplying settings...
+[info] set current project to akka_persistence (in build file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/)
+[debug] > Exec(set ideaPort in Global := 57637, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to akka_persistence (in build file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/)
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
