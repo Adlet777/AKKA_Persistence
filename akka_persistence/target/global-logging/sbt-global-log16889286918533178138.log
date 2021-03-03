@@ -1,0 +1,101 @@
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 15.0.2)
+[debug]             Load.loadUnit: plugins took 28.7607ms
+[debug]             Load.loadUnit: defsScala took 0.0046ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.0459 ms
+[debug]                 Load.resolveProject(global-plugins) took 0.9698ms
+[debug]               Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Adlet\.sbt\1.0\plugins, plugins: List(<none>))) took 2.3738ms
+[debug] [Loading] Done in C:\Users\Adlet\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]             Load.loadUnit: loadedProjectsRaw took 3.2369ms
+[debug]             Load.loadUnit: cleanEvalClasses took 0.0087ms
+[debug]           Load.loadUnit(file:/C:/Users/Adlet/.sbt/1.0/plugins/, ...) took 33.0597ms
+[debug]         Load.apply: load took 36.9394ms
+[debug]         Load.apply: resolveProjects took 0.0882ms
+[debug]         Load.apply: finalTransforms took 9.8695ms
+[debug]         Load.apply: config.delegates took 0.2845ms
+[debug]         Load.apply: Def.make(settings)... took 99.7974ms
+[debug]         Load.apply: structureIndex took 12.1899ms
+[debug]         Load.apply: mkStreams took 0.0048ms
+[info] loading global plugins from C:\Users\Adlet\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]       Load.defaultLoad until apply took 312.5087ms
+[debug]                       Load.loadUnit: plugins took 26.98ms
+[debug]                       Load.loadUnit: defsScala took 0.0061ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project\project
+[debug]                         Load.loadUnit: mkEval took 0.341ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.7545 ms
+[info] loading settings for project akka_persistence-build-build from plugins.sbt ...
+[debug]                           Load.resolveProject(akka_persistence-build-build) took 1.2339ms
+[debug]                         Load.loadTransitive: finalizeProject(Project(id akka_persistence-build-build, base: C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project\project, plugins: List(<none>))) took 2.3022ms
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project\project, returning: (akka_persistence-build-build)
+[debug]                       Load.loadUnit: loadedProjectsRaw took 142.0178ms
+[debug]                       Load.loadUnit: cleanEvalClasses took 54.3859ms
+[debug]                     Load.loadUnit(file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/project/project/, ...) took 224.6515ms
+[debug]                   Load.apply: load took 226.2114ms
+[debug]                   Load.apply: resolveProjects took 0.0986ms
+[debug]                   Load.apply: finalTransforms took 7.4199ms
+[debug]                   Load.apply: config.delegates took 0.4234ms
+[debug]                   Load.apply: Def.make(settings)... took 55.029ms
+[debug]                   Load.apply: structureIndex took 19.2746ms
+[debug]                   Load.apply: mkStreams took 0.0047ms
+[info] loading project definition from C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]                 Load.loadUnit: plugins took 827.6379ms
+[debug]                 Load.loadUnit: defsScala took 0.0033ms
+[debug] [Loading] Scanning directory C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project
+[debug]                   Load.loadUnit: mkEval took 0.4044ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbtprotoc.ProtocPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbtassembly.AssemblyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(scoverage.ScoverageSbtPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.scoverage.coveralls.CoverallsPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin))), Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(org.scalafmt.sbt.ScalafmtPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.MultiJvmPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.portablescala.sbtplatformdeps.PlatformDepsPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtprotoc.ProtocPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtassembly.AssemblyPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(scoverage.ScoverageSbtPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.scoverage.coveralls.CoverallsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.scalafmt.sbt.ScalafmtPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.portablescala.sbtplatformdeps.PlatformDepsPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,org.scalafmt.sbt.ScalafmtPlugin,scoverage.ScoverageSbtPlugin,org.portablescala.sbtplatformdeps.PlatformDepsPlugin,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,sbtassembly.AssemblyPlugin,sbtprotoc.ProtocPlugin,org.scoverage.coveralls.CoverallsPlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 11.1579 ms
+[info] loading settings for project akka_persistence-build from idea7.sbt ...
+[debug]                     Load.resolveProject(akka_persistence-build) took 79.0743ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id akka_persistence-build, base: C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, plugins: List(<none>))) took 91.1291ms
+[debug] [Loading] Done in C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project, returning: (akka_persistence-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 122.7708ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 4.5166ms
+[debug]               Load.loadUnit(file:/C:/Users/Adlet/Desktop/akka_persistence_project/akka_persistence/project/, ...) took 955.8565ms
+[debug]             Load.apply: load took 957.3176ms
+[debug]             Load.apply: resolveProjects took 0.0791ms
+[debug]             Load.apply: finalTransforms took 13.2018ms
+[debug]             Load.apply: config.delegates took 0.234ms
+[debug]             Load.apply: Def.make(settings)... took 73.9326ms
+[debug]             Load.apply: structureIndex took 15.9975ms
+[debug]             Load.apply: mkStreams took 0.0201ms
+[info] loading project definition from C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[error] java.lang.ClassCastException: class sbtprotoc.ProtocPlugin$Arguments cannot be cast to class sbtprotoc.ProtocPlugin$Arguments (sbtprotoc.ProtocPlugin$Arguments is in unnamed module of loader sbt.internal.PluginManagement$PluginClassLoader @756104e; sbtprotoc.ProtocPlugin$Arguments is in unnamed module of loader sbt.internal.PluginManagement$PluginClassLoader @6b311cdd)
+[error] 	at scala.Option.exists(Option.scala:376)
+[error] 	at sbtprotoc.ProtocPlugin$.$anonfun$protobufConfigSettings$3(ProtocPlugin.scala:171)
+[error] 	at sbtprotoc.ProtocPlugin$.$anonfun$protobufConfigSettings$3$adapted(ProtocPlugin.scala:170)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:832)
+[error] (Compile / protocRecompile) java.lang.ClassCastException: class sbtprotoc.ProtocPlugin$Arguments cannot be cast to class sbtprotoc.ProtocPlugin$Arguments (sbtprotoc.ProtocPlugin$Arguments is in unnamed module of loader sbt.internal.PluginManagement$PluginClassLoader @756104e; sbtprotoc.ProtocPlugin$Arguments is in unnamed module of loader sbt.internal.PluginManagement$PluginClassLoader @6b311cdd)
+[debug] > Exec(loadFailed, None, None)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)

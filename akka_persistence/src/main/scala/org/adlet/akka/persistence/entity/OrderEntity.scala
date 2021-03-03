@@ -1,13 +1,17 @@
 package org.adlet.akka.persistence.entity
 
-import akka.actor.typed.Behavior
-import akka.cluster.sharding.typed.scaladsl.EntityTypeKey
+import akka.actor.typed.{ActorSystem, Behavior}
+import akka.cluster.sharding.typed.scaladsl.{ClusterSharding, Entity, EntityTypeKey}
 import akka.persistence.typed.scaladsl.Effect
 import akka.persistence.typed.scaladsl.Effect.persist
 import akka.persistence.typed.{PersistenceId, scaladsl}
 import akka.persistence.typed.scaladsl.{EventSourcedBehavior, RetentionCriteria}
+import org.adlet.akka.persistence.adapter.OrderEventAdapter
 import org.adlet.akka.persistence.command.{Choose, Enter, OrderCommand}
 import org.adlet.akka.persistence.event.{Chosen, Entered, OrderEvent}
+import org.adlet.akka.persistence.model.Summary
+import org.adlet.akka.persistence.util.EventProcessorSettings
+
 
 object OrderEntity {
 
@@ -31,7 +35,8 @@ case class StateHolder(content: Order, state: OrderState) {
     case evt: Chosen => {
       copy(
         content = content.copy(
-          product = Some(evt.product)
+          product = Some(evt.product),
+          creditCard = Some(evt.creditCard)
         ),
         state = OrderState.ASSIGN
       )
@@ -56,7 +61,17 @@ object StateHolder {
   //type key
   val typeKey: EntityTypeKey[OrderCommand] = EntityTypeKey[OrderCommand]("Order")
 
-def apply(id: String): Behavior[OrderCommand] = {
+  def init(system: ActorSystem[_], eventProcessorSettings: EventProcessorSettings): Unit = {
+
+    ClusterSharding(system).init(Entity(typeKey) { entityContext =>
+      val n = math.abs(entityContext.entityId.hashCode % eventProcessorSettings.parallelism)
+      val eventProcessorTag = eventProcessorSettings.tagPrefix + "-" + n
+      OrderEntity(entityContext.entityId, Set(eventProcessorTag))
+    })
+
+  }
+
+def apply(id: String, eventProcessorTag: Set[String]): Behavior[OrderCommand] = {
   EventSourcedBehavior[OrderCommand, OrderEvent, StateHolder](
     persistenceId = PersistenceId(typeKey.name, id),
     StateHolder.empty,
@@ -67,19 +82,26 @@ def apply(id: String): Behavior[OrderCommand] = {
       case evt: Chosen => Set("order", "product chosen")
       case evt: Entered => Set("order", "credit card number entered")
     }
-    .withRetention(RetentionCriteria.snapshotEvery(numberOfEvents = 1, keepNSnapshots = 2))
+    .withRetention(RetentionCriteria.snapshotEvery(numberOfEvents = 10, keepNSnapshots = 2))
+    .eventAdapter(new OrderEventAdapter)
 }
 
-  def commandHandler(str: String, holder: OrderEntity.StateHolder, command: OrderCommand): Effect[OrderEvent, StateHolder] = {
+  def commandHandler(PersistenceId: String, holder: OrderEntity.StateHolder, command: OrderCommand): Effect[OrderEvent, StateHolder] = {
 
     command match {
       case cmd: Choose => {
         holder.state match {
           case OrderState.PRODUCT => {
             val evt = Chosen (
-              product = cmd.product
+              product = cmd.product,
+              creditCard = cmd.creditCard
             )
-            Effect.persist(evt)
+            Effect.persist(evt).thenReply(cmd.replyTo)(_=>
+            Summary(
+              product = cmd.product,
+              creditCard = cmd.creditCard
+            )
+            )
           }
           case _ => throw new RuntimeException("Error")
         }

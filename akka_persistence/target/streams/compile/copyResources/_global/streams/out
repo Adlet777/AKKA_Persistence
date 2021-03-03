@@ -1,0 +1,3 @@
+[debug] Copy resource mappings: 
+[debug] 	(C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\src\main\resources\application.conf,C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\target\scala-2.13\classes\application.conf)
+[debug] 	(C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\src\main\resources\logback.xml,C:\Users\Adlet\Desktop\akka_persistence_project\akka_persistence\target\scala-2.13\classes\logback.xml)

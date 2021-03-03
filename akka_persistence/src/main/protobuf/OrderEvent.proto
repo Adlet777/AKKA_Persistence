@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "scalapb/scalapb.proto";
+import "google/protobuf/wrappers.proto";
+
+option (scalapb.options) = {
+  package_name: "org.adlet.akka.persistence.event.proto"
+  flat_package: true
+};
+
+message ChosenV1 {
+  option (scalapb.message).extends = "org.adlet.akka.persistence.model.protobuf.OrderProtoEvent";
+    string product = 1;
+    string creditCard = 2;
+}
+
+message EnteredV1 {
+  option (scalapb.message).extends = "org.adlet.akka.persistence.model.protobuf.OrderProtoEvent";
+    string product = 1;
+    string creditCard = 2;
+}
